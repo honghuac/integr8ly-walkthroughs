@@ -81,7 +81,7 @@ Is the new project in OpenShift created successfully?
 
 * In this exercise, you download the Camel K CLI Tool and begin interacting with it.
 
-. Download the archive containing the latest *Camel K* CLI Tool link:https://github.com/apache/camel-k/releases[release] on your workstation.
+. Download the archive containing the latest *Camel K* CLI Tool link:https://github.com/apache/camel-k/releases[release] (designed for your workstation OS) on your workstation.
 +
 NOTE: A possible method to perform this download can be:
 ----
@@ -141,6 +141,7 @@ cd $AI_EXERCISE_HOME/camelk
 
 * Now, deploy the Camel K operator, which provides the serverless application development framework support. This is an important pre-requisite step to using Camel K on Red Hat OpenShift Container Platform.
 
+. Request your instructor to add *cluster-admin* role to your OpenShift user account temporarily.
 . Type this command to begin the installation process:
 +
 ----
@@ -153,6 +154,8 @@ kamel install
 ----
 Camel K installed in namespace {user-sanitized-username}-camelk
 ----
++
+. Once installation of the operator is complete, inform your instructor in order to have this *cluster-admin* role removed from your OpenShift user account.
 
 [type=verification]
 Were you able to install the operator?
